@@ -5,7 +5,7 @@ import java.util.*;
 
 public class MyPanel extends JPanel{
 
-  private final int MPS = 2;
+  private final int MPS = 20;
   private final int length = 1010;
   private final long START_TIME = System.nanoTime();
   private final long TIME_INCREMENT = (long) Math.pow(10, 9) / MPS;
