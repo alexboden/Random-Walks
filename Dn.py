@@ -9,11 +9,11 @@ def fac(x):
 def bionom(n, k):
     return fac(n)/(fac(n-k)*fac(k))
 
-highest_n_value = 100
+highest_n_value = 10
 for n in range(highest_n_value):
     dn = 0
     for k in range(1, n+1):
         if((n+k)%2 == 0):
             dn += bionom(n,(n+k)/2)*2*k
     
-    print('{}'.format(float(dn)/float(2**n)))
+    print('{}'.format(Fraction(dn, 2**n))) 
