@@ -11,7 +11,7 @@ def bionom(n, k):
 
 total = 0 
 
-for n in range(10):
+for n in range(8):
     if(n % 2 == 0):
         total += float(bionom(n,n/2))/float((2**n))
         print(Fraction(total))
